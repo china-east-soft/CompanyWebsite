@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ymtv_android release='false'>
+    <app version='2.1.1311' link='http://china-east.net/android/YMTV2.1.1311.apk' note='测试版，测试客户端升级'>
+      <terminals>
+          <wasu_ap_rt3352_dvbc_ce0401a version='1.5.1310' link='http://yunmao.tv/uploads/terminal/file/1/root_uImage_1.5.1310' />
+      </terminals>
+    </app>
+</ymtv_android>

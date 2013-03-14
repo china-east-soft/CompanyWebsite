@@ -1,0 +1,14 @@
+vendor/bundle
+*#
+*~
+*.swo
+public/release/
+public/download
+public/doc
+rake
+*.swp
+Gemfile.lock
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*

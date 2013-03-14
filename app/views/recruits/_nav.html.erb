@@ -1,0 +1,9 @@
+<%= tabs_tag(:namespace => :jobs, :open_tabs => { :id => "user_menus" }, :builder => MenuTabBuilder) do |tab| %>
+  <%= tab.index '招聘首页', recruits_path %>
+  <%= tab.c      'C/C++工程师', c_recruits_path %>
+  <%= tab.ruby 'Ruby工程师', ruby_recruits_path %>
+  <%= tab.android   'Android工程师', android_recruits_path %>
+  <%= tab.ios   'IOS工程师', ios_recruits_path %>
+  <%= tab.net   '网络支持工程师', net_recruits_path %>
+  <%= tab.test   '测试工程师', test_recruits_path %>
+<% end %>

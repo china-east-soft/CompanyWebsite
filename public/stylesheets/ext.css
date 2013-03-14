@@ -1,0 +1,47 @@
+div.phonetoy {
+	display:none;
+}
+.clear{clear:both;}
+#slider{
+	margin-left:10px;
+}	
+#slider ul, #slider li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+#slider li{ 
+	width:446px;
+	height:201px;
+	overflow:hidden; 
+	}	
+#prevBtn, #nextBtn{ 
+	display:block;
+	width:30px;
+	height:677px;
+	position:absolute;
+	left:120px;
+	top:387px;
+	}	
+#nextBtn{ 
+	left:592px;
+	}														
+#prevBtn a, #nextBtn a{  
+	display:block;
+	width:30px;
+	height:77px;
+	background:url(../images/btn_prev.gif) no-repeat 0 0;	
+	}	
+#nextBtn a{ 
+	background:url(../images/btn_next.gif) no-repeat 0 0;	
+	}
+.user-profiles {float: left; font-size: 11px; list-style: none; list-style-image: none; margin: 0}
+.user-profiles .vcard {float: left; height: 210px; margin: 0 0 0 10px; width: 155px}
+.user-profiles .vcard:nth-child(4n+1) {margin-left: 0}
+.user-profiles .fn {color: #40362B; display: block; font-size: 12px; font-weight: 700}
+.user-profiles .org {display: none}
+.user-profiles {float: left; font-size: 11px; list-style: none; list-style-image: none; margin: 0}
+.user-profiles .vcard {float: left; height: 210px; margin: 0 0 0 10px; width: 155px}
+.user-profiles .vcard:nth-child(4n+1) {margin-left: 0}
+.user-profiles .fn {color: #40362B; display: block; font-size: 12px; font-weight: 700}
+.user-profiles .org {display: none}

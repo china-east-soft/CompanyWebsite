@@ -1,0 +1,36 @@
+<div id="header">
+  <div id="topbar">
+    <span>技术引领行业 需求激发创新</span>
+  </div>
+
+  
+  <div id="iw_logo"><a herf='/'>杭州东方网和科技有限公司</a></div>
+ <script type="text/javascript" charset="utf-8">
+   $(document).ready(function(){
+
+   submenu = $('.submenu');
+   a = function(){$('ol', submenu).show()};
+   b = function(){$('ol', submenu).hide()};
+   submenu.each(function(){
+   a = function(){$('ol', this).show()};
+   b = function(){$('ol', this).hide()};
+
+    $(this).hover(a,b)
+   $('ol li', this).hover(a,b)
+   });
+     });
+  </script>
+  <ul id="nav" role="navigation">
+    <li class='first'><a href="/" id="nav_home"><span class="text">首&nbsp;&nbsp;页</span></a></li>
+
+    <li class='submenu'><a href="/products/" id="nav_product"><span class="text">产&nbsp;&nbsp;品</span></a></li> 
+
+    <li class='submenu'><a href="/scheme/" id="nav_scheme"><span class="text">解决方案</span></a></li> 
+
+    <li><a href="/recruits/" id="nav_recruit"><span class="text">招聘英才</span></a></li>
+
+    <li><a href="/customerservice/" id="nav_service_support"><span class="text">服务支持</span></a></li>
+
+    <li><a href="/contact/" id="nav_contact"><span class="text">联系我们</a></li>
+  </ul>
+</div>  

@@ -1,0 +1,12 @@
+<div class="news" id="news">
+  <h3>最新资讯</h3>
+  <div class="more"><a href="#">查看更多…</a></div>
+  <ul>
+    <% for new in @news %>
+    <li>
+      <%= link_to truncate(new[0], :length => 24), "#{new[1]}", :target => '_blank' %>
+      <span class='date'><%= new[2].strftime("%y-%m-%d") %></span>
+    </li>
+    <% end %>
+  </ul>
+</div>

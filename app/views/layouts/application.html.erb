@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN">
+<head>
+  <link rel="icon" type="images/png" href="/images/bnner.png">
+	<title>东方网和科技有限公司 - 全球领先的三网融合创新技术解决方案提供商</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="东方网和科技有限公司" />
+	<meta name="keywords" content="网络 三网融合 跨接网络" />
+	<%= stylesheet_link_tag 'style', :media => 'screen' %>
+	<%= javascript_include_tag "jquery-1.6.2.min" %>
+	<%= csrf_meta_tag %>
+</head>
+
+<body class="archive category category-about category-3">
+	<div id="container">
+		<!-- Header -->
+		<div id="header_wrapper">
+			<%= render 'layouts/header' %>
+		</div>
+		<!-- [END] Header -->
+
+		<div id="container">
+			<!-- Content -->
+			<div id='home'>
+				<div id="content_wrapper">
+					<%= yield %>
+				</div>
+			<!-- [END] Content -->
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div id="footer_wrapper">
+			<%= render 'layouts/footer' %>
+		</div>
+		<!-- [END] Footer -->
+	</div>
+</body>
+</html>
