@@ -1,3 +1,5 @@
+#encoding utf8
+
 require 'jcode' if RUBY_VERSION < '1.9'
 require "iconv" 
 $KCODE='utf8'
@@ -9,8 +11,8 @@ class PagesController < ApplicationController
     #rss("http://tech.163.com/special/000944OI/kejitongxin.xml").items.each do |item|
       unless item.title.blank?
         @news << [
-                  Iconv.iconv("UTF-8//IGNORE","GB2312//IGNORE", item.title).first.gsub(/[\[><\]]/, ''),
-                  Iconv.iconv("UTF-8//IGNORE","GB2312//IGNORE", item.link),
+                  item.title, #Iconv.iconv("UTF-8//IGNORE","GB2312//IGNORE", item.title).first.gsub(/[\[><\]]/, ''),
+                  item.link, #Iconv.iconv("UTF-8//IGNORE","GB2312//IGNORE", item.link),
                   item.pubDate
                  ]
       end
