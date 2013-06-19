@@ -4,7 +4,9 @@
   <ul>
     <% for new in @news %>
     <li>
-      <%= link_to truncate(new[0], :length => 24), "#{new[1]}", :target => '_blank' %>
+      <a href=<%= "#{new[1].first}"%> target='_blank'>
+        <%= new[0] %>
+      </a>
       <span class='date'><%= new[2].strftime("%y-%m-%d") %></span>
     </li>
     <% end %>

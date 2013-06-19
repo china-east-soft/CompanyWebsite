@@ -17,6 +17,8 @@ class PagesController < ApplicationController
                  ]
       end
     end
+  rescue
+    @news = []
   end
   
   def products
